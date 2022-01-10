@@ -1,5 +1,5 @@
 const weatherAPI = require('./weatherAPI');
-const { showWeather } = require('./showWeather');
+const { messageWeather } = require('./showWeather');
 
 jest.mock('./weatherAPI');
 test('Return the Weather message', () => {
@@ -9,8 +9,8 @@ test('Return the Weather message', () => {
     // jest.spyOn(weatherAPI, 'getWeather')
     // weatherAPI.getWeather.mockImplementation((format) => `${format} Fire`)
 
-    const result = showWeather();
-    const expected = `Today weather is ${format} Fire`;
+    const result = messageWeather();
+    const expected = `Today weather is ${format} Fire ${format}`;
 
     expect(weatherAPI.getWeather.mock.calls).toEqual([
         ['C']
