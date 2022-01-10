@@ -1,20 +1,9 @@
 const weatherAPI = require('./weatherAPI');
 
-const showWeather = () => {
+const messageWeather = () => {
     let weather = weatherAPI.getWeather('C');
-    return `Today weather is ${weather}`
+    return `Today weather is ${weather} C`
 }
 
-const showWindSpeed = () =>  {
 
-    let windRows = weatherAPI.getWind() | 1;
-    let winRowLines = ''
-    
-    for (let index = 0; index < windRows; index++) {
-        winRowLines+= '---'
-    }
-
-    return winRowLines;
-}
-
-module.exports = { showWeather, showWindSpeed}
+module.exports = { messageWeather }
