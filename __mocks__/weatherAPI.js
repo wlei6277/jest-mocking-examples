@@ -1,3 +1,3 @@
 module.exports = {
-    getWeather: jest.fn((format) => `${format} Fire`)
+    getWeather: jest.fn((format) => `20`)
 }
