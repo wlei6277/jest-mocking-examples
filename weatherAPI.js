@@ -3,4 +3,11 @@ const getWeather = (format) => {
     return  50;
 }
 
-module.exports = { getWeather}
+const getMetaWeather = async () => {
+    return new Promise((resolve) => {
+        resolve('Summer time!')
+    })
+    
+}
+
+module.exports = { getWeather, getMetaWeather}

@@ -5,5 +5,9 @@ const messageWeather = () => {
     return `Today weather is ${weather}, have a nice day!`
 }
 
+const showWeatherStatus = async () => {
+    let weather =  await weatherAPI.getMetaWeather();
+    return `${weather}, Enjoy!`
+}
 
-module.exports = { messageWeather }
+module.exports = { messageWeather, showWeatherStatus }

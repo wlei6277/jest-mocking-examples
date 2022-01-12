@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest"
   },
+  "module": "browser",
   "keywords": [],
   "author": "",
   "license": "ISC",
