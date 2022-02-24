@@ -1,16 +1,11 @@
 {
-  "name": "02-mocking-code",
+  "name": "jest-mocking-examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "description": "Repo to showcase the different approaches to mocking in jest",
+  "main": "__tests__/reassign.js",
+  "license": "MIT",
   "module": "browser",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "jest": "^27.4.7"
+    "jest": "^27.4.1"
   }
 }
